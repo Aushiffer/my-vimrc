@@ -6,6 +6,6 @@ Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
 call plug#end()
 
-let g:airline_theme='luna'
+let g:airline_theme='ayu_mirage'
 colorscheme darkblue
 set number
