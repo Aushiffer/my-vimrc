@@ -6,6 +6,6 @@ Plug 'w0rp/ale'
 Plug 'flazz/vim-colorschemes'
 call plug#end()
 
-let g:airline_theme='wombat'
-colorscheme wombat
+let g:airline_theme='luna'
+colorscheme darkblue
 set number
