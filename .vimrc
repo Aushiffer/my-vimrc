@@ -3,10 +3,11 @@ Plug 'yuttie/comfortable-motion.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'mhinz/vim-startify'
-Plug 'w0rp/ale'
+Plug 'sheerun/vim-polyglot'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 let g:airline_theme='ayu_mirage'
@@ -22,4 +23,7 @@ noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
 colorscheme darkblue
 set number
+set ts=8
+set sw=8
+set nocompatible
 set mouse=a
