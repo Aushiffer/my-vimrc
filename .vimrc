@@ -10,7 +10,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dense-analysis/ale'
 call plug#end()
 
-let g:airline_theme='ayu_mirage'
+let g:airline_themes = 'dracula'
 let g:comfortable_motion_no_default_key_mappings = 1
 let g:comfortable_motion_friction = 80.0
 let g:comfortable_motion_air_drag = 2.0
@@ -21,7 +21,11 @@ nnoremap <silent> <C-f> :call comfortable_motion#flick(g:comfortable_motion_impu
 nnoremap <silent> <C-b> :call comfortable_motion#flick(g:comfortable_motion_impulse_multiplier * winheight(0) * -4)<CR>
 noremap <silent> <ScrollWheelDown> :call comfortable_motion#flick(40)<CR>
 noremap <silent> <ScrollWheelUp>   :call comfortable_motion#flick(-40)<CR>
-colorscheme darkblue
+if v:version < 802
+    packadd! dracula
+endif
+syntax enable
+colorscheme dracula
 set number
 set ts=8
 set sw=8
